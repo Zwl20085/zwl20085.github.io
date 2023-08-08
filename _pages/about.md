@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "academicpages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "For Genius, By Genius"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,8 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-For Genius, By Genius
-======
+
 Wentao Zhang
 Ph. D candidate in Southeast University
 Hairpin IPM Motor/
