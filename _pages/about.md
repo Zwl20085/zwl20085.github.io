@@ -10,10 +10,14 @@ redirect_from:
 
 
 Wentao Zhang
+
 Ph. D candidate in Southeast University
-Hairpin IPM Motor/
-Universal Lumped Parameter Thermal Model Solver/
-Multiphysics Analysis and Optimization for Electrical Motor/
+
+1.Hairpin IPM Motor
+
+2.Universal Lumped Parameter Thermal Model Solver
+
+3.Multiphysics Analysis and Optimization for Electrical Motor
 
 
 WAITING FOR MORE DATA
