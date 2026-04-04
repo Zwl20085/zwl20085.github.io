@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Wentao Zhang"
 title_separator          : "-"
 name                     : &name "Wentao Zhang"
-description              : &description "Ph. D candidate in Southeast University"
+description              : &description "Research Assistant, PEMC, University of Nottingham"
 url                      : https://zwl20085.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Zwl20085/zwl20085.github.io"
@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Wentao Zhang"
   avatar           : "Author_Wentao_Zhang.jpg"
-  bio              : "Ph. D candidate in Southeast University, focusing on the Hairpin IPM machine"
-  location         : "Nanjing, Southeast Univerisity"
+  bio              : "Research Assistant, Power Electronics, Machines and Control (PEMC), University of Nottingham. Multi-physics design and control of high power density electric machines for EVs."
+  location         : "Nottingham, United Kingdom"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=NBSq6aUAAAAJ&hl=en"
-  email            : "zhangwentaoseu@outlook.com"
+  email            : "wentao.zhang@nottingham.ac.uk"
   researchgate     :  "https://www.researchgate.net/profile/Wentao-Zhang-41?ev=hdr_xprf"
   uri              :
   bitbucket        :
@@ -103,13 +103,13 @@ author:
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            :
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          :
   vine             :
   weibo            :
   xing             :

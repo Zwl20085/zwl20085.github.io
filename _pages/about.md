@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "For Genius, By Genius"
+title: "Wentao Zhang"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,58 +8,34 @@ redirect_from:
   - /about.html
 ---
 
+I am a Research Assistant at the [Power Electronics, Machines and Control (PEMC) Group](https://www.nottingham.ac.uk/research/groups/power-electronics-machines-and-control/index.aspx), University of Nottingham (since Sep. 2025). I received my Ph.D. in Electrical Engineering from Southeast University, Nanjing, China (Sep. 2021 – Sep. 2025), where I also completed my M.Eng. (2018–2021) and B.Eng. (2014–2018).
 
-Wentao Zhang
+My research focuses on the **multi-physics design, analysis, and control of high power/torque density electric machine systems** for electric vehicles (EVs), including flat wire permanent magnet machines and wound-field excited machines. I have authored 22 journal papers (17 published in IEEE Transactions) and 17 conference papers.
 
-Ph. D candidate in Southeast University
+## Research Interests
 
-1.Hairpin IPM Motor
+- Multi-physics design and optimization of electric machines for EVs
+- Flat wire (hairpin) winding permanent magnet machines
+- Wound-field flux-switching and hybrid excitation machines
+- Lumped parameter thermal modelling and oil-cooling systems
+- DC winding induced voltage analysis and suppression
+- Control and dynamic modelling of electric machine drive systems
 
-2.Universal Lumped Parameter Thermal Model Solver
+## News
 
-3.Multiphysics Analysis and Optimization for Electrical Motor
+- **Sep. 2025** — Joined PEMC, University of Nottingham as Research Assistant
+- **2025** — 1st Prize, IEEE Transactions on Energy Conversion EV Design Competition
+- **2025** — 2nd Prize Paper Award, IEEE Transactions on Transportation Electrification
+- **2024** — 2nd Prize, 11th Energy Equipment Innovative Design Competition (China Postgraduate)
+- **2023** — 1st Prize, IEEE IAS CMD Thesis Contest (non-Ph.D.)
+- **2023** — CIEEC Best Paper Award
+- **2022** — Outstanding Master Degree Thesis Award, Jiangsu Province
 
+## Selected Publications
 
-WAITING FOR MORE DATA
+1. **W. Zhang**, Z. Wu, and W. Hua, "Design of n-Layer Flat Wire Winding in Permanent Magnet Machine for Electric Vehicles," *IEEE Trans. Transport. Electrific.*, vol. 11, no. 3, pp. 7798–7810, 2025.
+2. **W. Zhang**, Z. Wu, and W. Hua, "High-Fidelity Lumped Parameter Thermal Model for Oil-Cooling Hairpin Winding PM Machines in EVs," *IEEE Trans. Transport. Electrific.*, vol. 12, no. 2, pp. 2978–2991, Apr. 2026.
+3. **W. Zhang**, Z. Wu, Y. Fan, W. Hua, and M. Cheng, "Analysis and Multi-Objective Optimization of the Hybrid Excitation Switched Flux Machine," *IEEE Trans. Ind. Appl.*, vol. 61, no. 2, pp. 2996–3006, Mar.–Apr. 2025.
+4. **W. Zhang**, W. Hua, Z. Wu, G. Zhao, Y. Wang, and W. Xia, "Analysis of DC Winding Induced Voltage in Wound-Field Flux-Switching Machine With Air-Gap Field Modulation Principle," *IEEE Trans. Ind. Electron.*, vol. 69, no. 3, pp. 2300–2311, Mar. 2022.
 
-
-
-
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
-
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over -- just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
-
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-2. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-3. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-4. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-5. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-6. Check status by going to the repository settings, in the "GitHub pages" section
-
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
-
-Create content & metadata
-------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
-
-**Markdown generator**
-
-I have also created [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the academicpages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
-
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
-
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
-
-For more info
-------
-More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+[View all publications →](/publications/)
