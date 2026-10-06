@@ -6,12 +6,9 @@ authors: ["H. Hua", "X. Chen", "D. Li", "**Wentao Zhang**", "Z. Wu", "W. Hua"]
 publication_types: ["2"]
 publication: "IEEE Trans. Ind. Appl., vol. 60, no. 5, pp. 6787–6798, Sep.–Oct. 2024"
 featured: false
-abstract: ""
 summary: "H. Hua, X. Chen, D. Li, Wentao Zhang, Z. Wu, and W. Hua, \"Investigation of Torque Improvement of Modular Stator Surface-Mounted Permanent Magnet Machines With Flux Gaps,\" IEEE Trans. Ind. Appl., vol. 60, no. 5, pp. 6787–6798, Sep.–Oct. 2024."
 share: false
-links: [{"name": "Scholar", "url": "https://scholar.google.com/scholar?q=Investigation%20of%20Torque%20Improvement%20of%20Modular%20Stator%20Surface-Mounted%20Permanent%20Magnet%20Machines%20With%20Flux%20Gaps"}]
+links: [{"name": "DOI", "url": "https://doi.org/10.1109/TIA.2024.3413039"}]
+doi: "10.1109/TIA.2024.3413039"
+show_date: false
 ---
-
-H. Hua, X. Chen, D. Li, Wentao Zhang, Z. Wu, and W. Hua, "Investigation of Torque Improvement of Modular Stator Surface-Mounted Permanent Magnet Machines With Flux Gaps," IEEE Trans. Ind. Appl., vol. 60, no. 5, pp. 6787–6798, Sep.–Oct. 2024.
-
-[Scholar](https://scholar.google.com/scholar?q=Investigation%20of%20Torque%20Improvement%20of%20Modular%20Stator%20Surface-Mounted%20Permanent%20Magnet%20Machines%20With%20Flux%20Gaps)

@@ -1,0 +1,22 @@
+{{/* Selected publications: records marked `featured: true`, newest first. */}}
+{{ $st := .page }}
+{{ $items := where (where site.RegularPages "Section" "publications") "Params.featured" true }}
+{{ $items = $items.ByDate.Reverse }}
+<div class="wz-section-head">
+  {{ with $st.Title }}<h2>{{ . | markdownify }}</h2>{{ end }}
+  {{ with $st.Params.subtitle }}<p>{{ . | markdownify }}</p>{{ end }}
+</div>
+<ul class="wz-pubs">
+  {{ range $items }}
+  {{ $type := index (.Params.publication_types | default (slice "0")) 0 }}
+  <li>
+    <span class="wz-pub-kind">{{ if eq $type "2" }}Journal{{ else if eq $type "1" }}Conference{{ else }}Patent{{ end }}</span>
+    <div>
+      <a class="wz-pub-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <p class="wz-pub-meta">{{ delimit .Params.authors ", " | markdownify }} · <em>{{ .Params.publication | replaceRE `\s*\([^()]*Award[^()]*\)$` "" }}</em></p>
+      {{ with .Params.award }}<p class="wz-pub-award"><i class="fas fa-trophy" aria-hidden="true"></i> {{ . }}</p>{{ end }}
+    </div>
+  </li>
+  {{ end }}
+</ul>
+<p class="wz-pubs-more"><a href="/publications/">All 23 journal papers, 18 conference papers and 9 patents <i class="fas fa-arrow-right"></i></a></p>

@@ -1,7 +1,6 @@
 title: Wentao Zhang
 baseURL: https://zwl20085.github.io/
 theme:
-  - starter-hugo-academic
   - github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy/v5
 defaultContentLanguage: en
 enableRobotsTXT: true
@@ -10,8 +9,9 @@ summaryLength: 30
 pagination:
   pagerSize: 50
 outputs:
-  home: [HTML, RSS, JSON, WebAppManifest]
-  section: [HTML, RSS]
+  home: [HTML, WebAppManifest]
+  section: [HTML]
+disableKinds: [taxonomy, term, RSS]
 taxonomies:
   tag: tags
   category: categories
@@ -20,6 +20,9 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+    extensions:
+      typographer:
+        disable: true
   tableOfContents:
     startLevel: 2
     endLevel: 3

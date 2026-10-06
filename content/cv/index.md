@@ -2,6 +2,7 @@
 title: "Academic CV"
 layout: "academic-page"
 url: "/cv/"
+summary: "Academic CV of Wentao Zhang, Research Assistant at PEMC, University of Nottingham: education, appointments, awards, publications and service."
 ---
 
 
@@ -45,7 +46,7 @@ Research Assistant, Power Electronics and Machines Centre (PEMC). Research in th
 ## Teaching and professional service
 
 - Teaching assistant for the postgraduate course *Integrated Practice of Electrical Machine Systems*, Southeast University.
-- Supported junior Ph.D. and M.Sc. colleagues in machine modelling, finite element analysis, thermal networks and PWM-loss coupling.
+- Supported junior Ph.D. and M.Eng. researchers in machine modelling, finite element analysis, thermal networks and PWM-loss coupling.
 - Referee for IEEE Transactions on Industry Applications, Energy Conversion and Transportation Electrification.
 - Co-organiser of the ICEM 2026 special session *Next-Generation Electrified Transport: Advances in Electric Drive Systems*.
 

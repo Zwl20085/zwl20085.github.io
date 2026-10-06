@@ -1,0 +1,18 @@
+{{/* Highlights timeline from data/highlights.yaml (newest first). */}}
+{{ $st := .page }}
+<div class="wz-section-head">
+  {{ with $st.Title }}<h2>{{ . | markdownify }}</h2>{{ end }}
+  {{ with $st.Params.subtitle }}<p>{{ . | markdownify }}</p>{{ end }}
+</div>
+<ol class="wz-timeline">
+  {{ range site.Data.highlights.items }}
+  <li class="wz-tl-item">
+    <span class="wz-tl-year">{{ .year }}</span>
+    <span class="wz-tl-icon" aria-hidden="true"><i class="fas fa-{{ .icon | default "award" }}"></i></span>
+    <div class="wz-tl-body">
+      <h3>{{ with .url }}<a href="{{ . }}" {{ if hasPrefix . "http" }}target="_blank" rel="noopener"{{ end }}>{{ end }}{{ .title | markdownify }}{{ if .url }}</a>{{ end }}</h3>
+      {{ with .text }}<p>{{ . | markdownify }}</p>{{ end }}
+    </div>
+  </li>
+  {{ end }}
+</ol>

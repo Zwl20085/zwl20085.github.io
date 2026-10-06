@@ -77,7 +77,7 @@
           {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
         {{ end }}
         <li>
-          <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} aria-label="{{ .icon }}">
+          <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} aria-label="{{ .label | default .icon }}">
             <i class="{{ $pack }} {{ $pack_prefix }}-{{ .icon }} big-icon"></i>
           </a>
         </li>
@@ -98,6 +98,7 @@
 
    <div class="article-style">
       <div class="main-content">{{ $person_page.Content }}</div>
+      {{ with $person.interests }}<ul class="wz-chips" aria-label="Research interests">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
       <!-- <a class="btn btn-outline-primary btn-page-header btn-download" href="files/cv.pdf" target="_blank" rel="noopener">CV</a> -->
     </div>
 

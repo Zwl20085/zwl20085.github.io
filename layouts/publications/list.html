@@ -1,1 +1,28 @@
-{{ define "main" }}<main class="academic-page container"><h1>{{ .Title }}</h1><div class="article-style">{{ .Content }}</div></main>{{ end }}
+{{ define "main" }}
+{{ $all := where site.RegularPages "Section" "publications" }}
+<main class="academic-page container wz-publist">
+  <h1>{{ .Title }}</h1>
+  <p class="wz-lead">{{ len (where $all "Params.publication_types" "intersect" (slice "2")) }} journal papers (19 in IEEE Transactions; 11 first-author), {{ len (where $all "Params.publication_types" "intersect" (slice "1")) }} peer-reviewed conference papers and {{ len (where $all "Params.publication_types" "intersect" (slice "8")) }} patents.
+    <a href="https://scholar.google.com/citations?user=NBSq6aUAAAAJ" target="_blank" rel="noopener">Google Scholar</a> · <a href="https://orcid.org/0000-0003-1438-9056" target="_blank" rel="noopener">ORCID</a></p>
+  <nav class="wz-jump"><a href="#journal">Journal articles</a><a href="#conference">Conference papers</a><a href="#patents">Patents</a></nav>
+  {{ range slice (dict "id" "journal" "t" "2" "name" "Journal articles" "p" "J") (dict "id" "conference" "t" "1" "name" "Conference papers" "p" "C") (dict "id" "patents" "t" "8" "name" "Patents" "p" "P") }}
+  {{ $group := (where $all "Params.publication_types" "intersect" (slice .t)).ByDate.Reverse }}
+  <h2 id="{{ .id }}">{{ .name }} <span class="wz-count">{{ len $group }}</span></h2>
+  {{ range $group.GroupByDate "2006" }}
+  <h3 class="wz-year">{{ .Key }}</h3>
+  <ul class="wz-pubs wz-pubs-full">
+    {{ range .Pages }}
+    <li>
+      <div>
+        <a class="wz-pub-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <p class="wz-pub-meta">{{ delimit .Params.authors ", " | markdownify }} · <em>{{ .Params.publication | replaceRE `\s*\([^()]*Award[^()]*\)$` "" | markdownify }}</em></p>
+        {{ with .Params.award }}<p class="wz-pub-award"><i class="fas fa-trophy" aria-hidden="true"></i> {{ . }}</p>{{ end }}
+        {{ with .Params.links }}<p class="wz-pub-actions">{{ range . }}<a href="{{ .url }}" {{ if hasPrefix .url "http" }}target="_blank" rel="noopener"{{ end }}>{{ .name }}</a>{{ end }}</p>{{ end }}
+      </div>
+    </li>
+    {{ end }}
+  </ul>
+  {{ end }}
+  {{ end }}
+</main>
+{{ end }}

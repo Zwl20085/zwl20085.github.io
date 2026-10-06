@@ -1,5 +1,7 @@
 public/
 resources/
 .hugo_build.lock
-.hugo_build.lock
 .DS_Store
+Thumbs.db
+node_modules/
+*.zip

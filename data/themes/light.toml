@@ -7,7 +7,7 @@ name = "Light"
 
   # Menu
   menu_primary = "rgb(255, 255, 255)"  # White background for menu
-  menu_text = "rgba(36, 41, 46, 0.6)"  # Muted dark text for menu
+  menu_text = "rgba(36, 41, 46, 0.75)"  # Muted dark text for menu
   menu_text_active = "rgba(36, 41, 46, 1)"  # Dark active text
   menu_title = "#24292e"  # GitHub Light's dark gray
 

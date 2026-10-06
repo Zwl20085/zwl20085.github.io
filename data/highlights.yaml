@@ -1,0 +1,33 @@
+items:
+  - year: "2026"
+    icon: users
+    title: "Co-organiser, ICEM 2026 special session"
+    text: "*Next-Generation Electrified Transport: Advances in Electric Drive Systems*, International Conference on Electrical Machines, Funchal, Portugal."
+  - year: "2025"
+    icon: trophy
+    title: "IEEE TTE Prize Paper Award, 2nd Prize"
+    text: "For the first-author paper on general design of *n*-layer flat-wire windings in *IEEE Transactions on Transportation Electrification*."
+    url: "https://www.ieee-pels.org/awards/transactions-on-transportation-electrification-prize-paper/"
+  - year: "2025"
+    icon: trophy
+    title: "1st Prize, IEEE TEC Electric Vehicle Design Competition"
+    text: "International electric-vehicle machine design competition run with *IEEE Transactions on Energy Conversion*."
+  - year: "2025"
+    icon: graduation-cap
+    title: "*Machines* Best PhD Thesis Award"
+    text: "For the thesis *Multi-physics Analysis and Design of Hairpin Winding PM Traction Machines in Electric Vehicles*."
+  - year: "2025"
+    icon: university
+    title: "Joined PEMC, University of Nottingham"
+    text: "Research Assistant in the EPSRC AIMD programme: magnet-free synchronous machines, an in-house finite element package and neural surrogates."
+  - year: "2023"
+    icon: award
+    title: "1st Prize, IEEE IAS CMD Thesis Contest"
+    text: "Awarded for the M.Eng. thesis on wound-excited flux-modulation brushless machines."
+  - year: "2023"
+    icon: award
+    title: "CIEEC Best Paper Award"
+    text: "For *Analysis and Multi-Objective Optimization of the Hybrid Excitation Switched Flux Machine*."
+  - year: "2022"
+    icon: award
+    title: "Outstanding Master Degree Thesis Award, Jiangsu Province"

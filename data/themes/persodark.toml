@@ -3,7 +3,7 @@ name = "dark"
 
 [dark]
   # Primary
-  primary = "hsl(212, 100%, 40%)"  # A blue similar to GitHub Dark's highlights
+  primary = "hsl(212, 90%, 62%)"  # A blue similar to GitHub Dark's highlights
 
   # General Text
   text = "rgba(201, 209, 217, 1)"  # General text color matching GitHub Dark
@@ -16,7 +16,7 @@ name = "dark"
 
   # Links
   link = "hsl(212, 70%, 60%)"  # Slightly darker blue for links
-  link_hover = "hsl(212, 90%, 35%)"  # More vibrant, darker hover color
+  link_hover = "hsl(212, 100%, 75%)"  # More vibrant, darker hover color
   # link = "rgba(201, 209, 217, 1)"  # General text color matching GitHub Dark
   link_decoration = "underline"
 

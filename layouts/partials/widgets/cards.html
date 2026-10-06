@@ -1,0 +1,31 @@
+{{/* Research cards: one card per page in the configured section, with a readable figure. */}}
+{{ $st := .page }}
+{{ $items := (site.GetPage (printf "/%s" $st.Params.content.page_type)).RegularPages }}
+{{ $items = sort $items "Weight" "asc" }}
+
+<div class="wz-section-head">
+  {{ with $st.Title }}<h2>{{ . | markdownify }}</h2>{{ end }}
+  {{ with $st.Params.subtitle }}<p>{{ . | markdownify }}</p>{{ end }}
+</div>
+
+<div class="wz-cards">
+  {{ range $items }}
+  {{ $img := (.Resources.ByType "image").GetMatch "*featured*" }}
+  {{ $title := .Title }}{{ $alt := .Params.image.caption | default .Title }}
+  {{ $paper := "" }}{{ range first 1 .Params.links }}{{ $paper = .url }}{{ end }}
+  <article class="wz-card">
+    {{ with $img }}
+    {{ $fit := .Fit "900x520 webp" }}
+    <a class="wz-card-figure" href="{{ $paper | default "#" }}" aria-label="{{ $title }}" {{ if hasPrefix $paper "http" }}target="_blank" rel="noopener"{{ end }}>
+      <img src="{{ $fit.RelPermalink }}" width="{{ $fit.Width }}" height="{{ $fit.Height }}" alt="{{ $alt }}" loading="lazy">
+    </a>
+    {{ end }}
+    <div class="wz-card-body">
+      <h3>{{ .Title }}</h3>
+      <p>{{ .Params.summary }}</p>
+      {{ with .Params.image.caption }}<p class="wz-caption">Figure: {{ . }}</p>{{ end }}
+      {{ with $paper }}<a class="wz-more" href="{{ . }}" {{ if hasPrefix . "http" }}target="_blank" rel="noopener"{{ end }}>{{ if hasPrefix . "http" }}Read the paper{{ else }}Paper details{{ end }} <i class="fas fa-arrow-right"></i></a>{{ end }}
+    </div>
+  </article>
+  {{ end }}
+</div>

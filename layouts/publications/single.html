@@ -1,0 +1,24 @@
+{{ define "main" }}
+{{ $type := index (.Params.publication_types | default (slice "0")) 0 }}
+<main class="academic-page container wz-pub-page">
+  <p class="wz-eyebrow"><a href="/publications/">Publications</a> · {{ if eq $type "2" }}Journal article{{ else if eq $type "1" }}Conference paper{{ else }}Patent{{ end }}</p>
+  <h1>{{ .Title }}</h1>
+  <p class="wz-pub-authors">{{ delimit .Params.authors ", " | markdownify }}</p>
+  <p class="wz-pub-venue"><em>{{ .Params.publication | replaceRE `\s*\([^()]*Award[^()]*\)$` "" | markdownify }}</em></p>
+  {{ with .Params.award }}<p class="wz-pub-award"><i class="fas fa-trophy" aria-hidden="true"></i> {{ . }}</p>{{ end }}
+  {{ with .Params.links }}
+  <p class="wz-pub-links">{{ range . }}<a class="btn btn-outline-primary btn-sm" href="{{ .url }}" {{ if hasPrefix .url "http" }}target="_blank" rel="noopener"{{ end }}>{{ .name }}</a> {{ end }}</p>
+  {{ end }}
+  {{ $img := (.Resources.ByType "image").GetMatch "*featured*" }}
+  {{ with $img }}{{ $fit := .Fit "1200x900 webp" }}
+  <figure class="wz-pub-figure">
+    <img src="{{ $fit.RelPermalink }}" width="{{ $fit.Width }}" height="{{ $fit.Height }}" alt="{{ $.Params.image.caption | default $.Title }}" loading="lazy">
+    {{ with $.Params.image.caption }}<figcaption>{{ . }}</figcaption>{{ end }}
+  </figure>
+  {{ end }}
+  {{ with .Params.summary }}
+  <h2 class="wz-cite-h">Citation</h2>
+  <div class="wz-cite"><p id="wz-cite-text">{{ . | markdownify }}</p><button type="button" class="btn btn-sm btn-outline-secondary" onclick="navigator.clipboard&&navigator.clipboard.writeText(document.getElementById('wz-cite-text').innerText).then(()=>{this.textContent='Copied'})">Copy</button></div>
+  {{ end }}
+</main>
+{{ end }}
