@@ -1,56 +1,30 @@
-# Wentao Zhang — Academic Website
+# Wentao Zhang — academic website
 
-Personal academic website for **Wentao Zhang**, Research Assistant at the [Power Electronics, Machines and Control (PEMC) Group](https://www.nottingham.ac.uk/research/groups/power-electronics-machines-and-control/index.aspx), University of Nottingham.
+Replacement for the existing site at https://zwl20085.github.io/. Adapted from Simon Gravelle's Hugo academic template and the vendored Wowchemy theme. The prior Jekyll/AcademicPages implementation is replaced in the same repository.
 
-Live site: **[zwl20085.github.io](https://zwl20085.github.io)**
+## Build and preview
 
----
+Requires Hugo Extended 0.140.2 (the version used by the reference site). Theme files are vendored, so no Go module downloads are needed.
 
-## About
-
-Research interests: multi-physics design, analysis, and control of high power/torque density electric machine systems for electric vehicles — with a focus on flat wire permanent magnet machines and wound-field excited machines.
-
-- 22 journal papers (17 published in IEEE Transactions)
-- 17 conference papers
-- 9 Chinese patents
-
----
-
-## Site Structure
-
-Built with the [Academic Pages](https://github.com/academicpages/academicpages.github.io) Jekyll theme (forked from Minimal Mistakes).
-
-| Directory | Content |
-|---|---|
-| `_pages/` | Static pages (About, CV, etc.) |
-| `_publications/` | Publication entries |
-| `_talks/` | Talk/presentation entries |
-| `_portfolio/` | Project portfolio entries |
-| `_teaching/` | Teaching entries |
-| `_posts/` | Blog posts |
-| `files/` | Downloadable files (CV PDF, etc.) |
-| `images/` | Images used across the site |
-
-Key config: `_config.yml`
-
----
-
-## Local Development
-
-Requirements: Ruby, Bundler, Node.js
-
-```bash
-git clone https://github.com/Zwl20085/zwl20085.github.io
-cd zwl20085.github.io
-bundle install
-bundle exec jekyll serve --livereload
-# Open http://localhost:4000
+```powershell
+hugo --minify
+hugo server --bind 127.0.0.1
 ```
 
----
+## Content
 
-## Contact
+- `content/authors/admin/`: biography and Windows account portrait.
+- `content/research/`: illustrated research summaries.
+- `content/highlights/`: achievements.
+- `content/publications/`: 23 journal papers, 18 conference papers, 9 patents.
+- `content/cv/`: public academic CV, with print styling.
+- `content/home/`: homepage sections.
+- `ASSET_SOURCES.md`: figure provenance.
 
-- Email: [wentao.zhang@nottingham.ac.uk](mailto:wentao.zhang@nottingham.ac.uk)
-- Google Scholar: [Wentao Zhang](https://scholar.google.com/citations?user=NBSq6aUAAAAJ)
-- GitHub: [@Zwl20085](https://github.com/Zwl20085)
+Publication permalinks from the previous site are retained. `/publications/` and `/cv/` remain available. Research pages link to publisher DOI pages; publication records link to Google Scholar. Full publisher PDFs are not hosted.
+
+## Deployment
+
+The workflow builds Hugo and deploys it with GitHub Actions. GitHub Pages must use the "GitHub Actions" source. This replaces the content served by the existing website URL; it does not create a second repository or website. The workflow runs only on pushes to `master`, and pull requests only build for validation.
+
+The source template is GPL-3.0; its license is preserved in `LICENSE`. Theme licenses remain in `themes/`.

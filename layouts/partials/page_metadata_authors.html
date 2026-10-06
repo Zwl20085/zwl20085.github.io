@@ -1,0 +1,1 @@
+{{ range $index, $author := .Params.authors }}{{ if $index }}, {{ end }}<span>{{ $author | markdownify }}</span>{{ end }}
