@@ -4,10 +4,10 @@ first_name: "Wentao"
 last_name: "Zhang"
 superuser: true
 role: "Research Assistant"
-organizations: [{"name": "PEMC · University of Nottingham", "url": "https://www.nottingham.ac.uk/research/groups/pemc/"}]
+organizations: [{"name": "PEMC · University of Nottingham", "url": "https://www.nottingham.ac.uk/research/groups/pemc/", "email": "wentao.zhang@nottingham.ac.uk"}, {"name": "Ph.D., Southeast University", "url": "https://www.seu.edu.cn/english/"}]
 bio: "Electrical machines, multiphysics modelling and physics-informed AI."
 highlight_name: true
-social: [{"icon": "envelope", "icon_pack": "fas", "link": "mailto:wentao.zhang@nottingham.ac.uk"}, {"icon": "github", "icon_pack": "fab", "link": "https://github.com/Zwl20085"}, {"icon": "graduation-cap", "icon_pack": "fas", "link": "https://scholar.google.com/citations?user=NBSq6aUAAAAJ"}, {"icon": "orcid", "icon_pack": "ai", "link": "https://orcid.org/0000-0003-1438-9056"}, {"icon": "cv", "icon_pack": "ai", "link": "/cv/"}]
+social: [{"icon": "envelope", "icon_pack": "fas", "link": "mailto:wentao.zhang@nottingham.ac.uk"}, {"icon": "github", "icon_pack": "fab", "link": "https://github.com/Zwl20085"}, {"icon": "graduation-cap", "icon_pack": "fas", "link": "https://scholar.google.com/citations?user=NBSq6aUAAAAJ"}, {"icon": "orcid", "icon_pack": "ai", "link": "https://orcid.org/0000-0003-1438-9056"}, {"icon": "cv", "icon_pack": "ai", "link": "/files/Wentao_Zhang_CV.pdf"}]
 ---
 
 
@@ -23,4 +23,4 @@ I received my Ph.D. in Electrical Engineering from Southeast University in 2025,
 
 My journal publications include **19 papers in IEEE Transactions**, with **11 as first author**. My work has received the IEEE TTE Prize Paper Award, the IEEE TEC Electric Vehicle Design Competition first prize, and the *Machines* Best PhD Thesis Award.
 
-[Google Scholar](https://scholar.google.com/citations?user=NBSq6aUAAAAJ) · [ORCID](https://orcid.org/0000-0003-1438-9056) · [Academic CV](/cv/)
+[Google Scholar](https://scholar.google.com/citations?user=NBSq6aUAAAAJ) · [ORCID](https://orcid.org/0000-0003-1438-9056) · [Academic CV](/cv/) · [CV (PDF)](/files/Wentao_Zhang_CV.pdf)

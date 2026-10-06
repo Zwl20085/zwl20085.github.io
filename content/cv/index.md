@@ -6,7 +6,7 @@ url: "/cv/"
 
 
 **Wentao Zhang** · Research Assistant, University of Nottingham  
-[Email](mailto:wentao.zhang@nottingham.ac.uk) · [Google Scholar](https://scholar.google.com/citations?user=NBSq6aUAAAAJ) · [ORCID](https://orcid.org/0000-0003-1438-9056)
+[Email](mailto:wentao.zhang@nottingham.ac.uk) · [Download CV (PDF)](/files/Wentao_Zhang_CV.pdf) · [Google Scholar](https://scholar.google.com/citations?user=NBSq6aUAAAAJ) · [ORCID](https://orcid.org/0000-0003-1438-9056)
 
 ## Research
 

@@ -57,6 +57,7 @@
           <span>{{ .name }}</span>
           {{ if .url }}</a>{{ end }}
         </h3>
+        {{ with .email }}<p class="org-email"><a href="mailto:{{ . }}">{{ . }}</a></p>{{ end }}
         {{ end }}
       </div>
 
